@@ -13,7 +13,7 @@ class WebpackHealthPlugin {
       totalCompiles: 0,
       firstCompileTime: null,
     };
-  }
+  } 
 
   apply(compiler) {
     const pluginName = 'WebpackHealthPlugin';

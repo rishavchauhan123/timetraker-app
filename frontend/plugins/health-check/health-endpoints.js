@@ -210,4 +210,4 @@ function formatDuration(ms) {
   }
 }
 
-module.exports = setupHealthEndpoints;
+module.exports = setupHealthEndpoints; 
