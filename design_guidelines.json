@@ -1,0 +1,155 @@
+{
+  "identity": {
+    "persona": "E1 - The Anti-AI Designer",
+    "mission": "Create a productivity tool that feels like a flow state, not a spreadsheet. Mix Swiss precision with Soft Utility warmth.",
+    "principles": [
+      "Fusion: Swiss Grid structure + Soft Utility warmth",
+      "Emotion: Focus and Flow (Calm but active)",
+      "Content: Data is the art (Typography-led)",
+      "Negative Space: 3x standard spacing for breathing room",
+      "Contrast: Sharp text against soft backgrounds"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Manrope",
+      "weights": ["600", "800"],
+      "usage": "Page titles, Widget headers, Timer display",
+      "letterSpacing": "tracking-tight"
+    },
+    "body": {
+      "family": "Inter",
+      "weights": ["400", "500"],
+      "usage": "UI elements, Tables, Inputs, Labels",
+      "letterSpacing": "tracking-normal"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "weights": ["400"],
+      "usage": "Timer digits, IDs, Code snippets"
+    }
+  },
+  "colors": {
+    "palette_name": "Focus Flow (Soft Utility + Electric Accent)",
+    "primary": {
+      "name": "Electric Indigo",
+      "hex": "#4F46E5",
+      "tailwind": "bg-indigo-600",
+      "usage": "Primary Buttons, Active Timer, Key Accents"
+    },
+    "secondary": {
+      "name": "Soft Slate",
+      "hex": "#F1F5F9",
+      "tailwind": "bg-slate-100",
+      "usage": "Secondary Buttons, Hover States, Backgrounds"
+    },
+    "background": {
+      "default": "#FFFFFF",
+      "subtle": "#F8FAFC",
+      "tailwind": "bg-white"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#64748B",
+      "tailwind_primary": "text-slate-900",
+      "tailwind_secondary": "text-slate-500"
+    },
+    "status": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    }
+  },
+  "visual_enhancers": {
+    "radius": "rounded-xl",
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(0,0,0,0.04)]",
+      "float": "shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
+    },
+    "borders": "border border-slate-200",
+    "glass": "backdrop-blur-xl bg-white/80 border-white/20"
+  },
+  "layout": {
+    "grid_system": "The Control Room Grid",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_gap": "gap-8",
+      "widget_gap": "gap-6",
+      "internal_padding": "p-6"
+    },
+    "dashboard_structure": {
+      "hero": "col-span-full lg:col-span-8 row-span-1 (Active Timer)",
+      "sidebar": "col-span-full lg:col-span-4 row-span-2 (Project List/Tags)",
+      "feed": "col-span-full lg:col-span-8 row-span-2 (Activity Log)",
+      "stats": "col-span-full lg:col-span-4 row-span-1 (Summary)"
+    }
+  },
+  "components": {
+    "Button": {
+      "base": "rounded-full font-medium transition-all duration-200 active:scale-95",
+      "primary": "bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-500/30",
+      "secondary": "bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:border-slate-300",
+      "ghost": "hover:bg-slate-100 text-slate-600"
+    },
+    "Card": {
+      "base": "bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300",
+      "header": "p-6 border-b border-slate-50",
+      "content": "p-6"
+    },
+    "Input": {
+      "base": "h-11 rounded-lg border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-indigo-500/20 transition-all"
+    },
+    "Timer": {
+      "wrapper": "flex items-center justify-between bg-slate-900 text-white p-6 rounded-2xl shadow-2xl shadow-indigo-900/20",
+      "digits": "font-mono text-5xl font-bold tracking-widest"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover": "hover:-translate-y-1",
+    "micro_interactions": "active:scale-95"
+  },
+  "images": {
+    "avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1689600944138-da3b150d9cb8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NjE0MDMwMXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Professional woman headshot",
+        "category": "user_avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NjE0MDMwMXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Professional man headshot",
+        "category": "team_avatar"
+      }
+    ],
+    "backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1622579521534-8252f7da47fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwb2ZmaWNlJTIwZGVzayUyMHdvcmtzcGFjZXxlbnwwfHx8fDE3NjYxNDAzMDN8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Minimalist workspace",
+        "category": "landing_hero"
+      }
+    ]
+  },
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ],
+  "instructions_to_main_agent": "Follow the 'Control Room' grid layout for the dashboard. Use the 'Focus Flow' color palette. Ensure the Timer component is the visual hero of the dashboard. Use Manrope for all headings and Inter for body text. Implement the 'Soft Utility' aesthetic with generous spacing and subtle shadows."
+}
