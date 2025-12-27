@@ -21,7 +21,15 @@ load_dotenv(ROOT_DIR / '.env')
 
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
+
+import certifi
+
+client = AsyncIOMotorClient(
+    mongo_url,
+    tls=True,
+    tlsCAFile=certifi.where()
+)
+
 db = client[os.environ['DB_NAME']]
 
 # Security
@@ -594,6 +602,16 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# ✅ STARTUP: MongoDB check (PEHLE)
+@app.on_event("startup")
+async def startup_db_check():
+    try:
+        await client.admin.command("ping")
+        print("✅ MongoDB connected successfully")
+    except Exception as e:
+        print("❌ MongoDB connection failed:", e)
+
+        
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
